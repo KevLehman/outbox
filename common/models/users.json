@@ -1,0 +1,19 @@
+{
+  "name": "Users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "recommendations": {
+      "type": "hasMany",
+      "model": "Recommendation",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Company",
+  "plural": "companies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "optionalPhoneNumber": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "contacts": {
+      "type": "hasMany",
+      "model": "PointOfContact",
+      "foreignKey": "companyId"
+    },
+    "services": {
+      "type": "hasMany",
+      "model": "Service",
+      "foreignKey": "companyId"
+    },
+    "recommendations": {
+      "type": "hasMany",
+      "model": "Recommendation",
+      "foreignKey": "companyId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

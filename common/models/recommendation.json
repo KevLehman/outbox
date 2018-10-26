@@ -1,0 +1,43 @@
+{
+  "name": "Recommendation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "companyId": {
+      "type": "string",
+      "required": true
+    },
+    "valoration": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "comment": {
+      "type": "string",
+      "required": false,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "Users",
+      "foreignKey": "userId"
+    },
+    "company": {
+      "type": "belongsTo",
+      "model": "Company",
+      "foreignKey": "companyId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Entrust",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "companyId": {
+      "type": "string",
+      "required": "true"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "specialConcerns": {
+      "type": "string",
+      "required": false
+    },
+    "status": {
+      "type": "string",
+      "default": ""
+    },
+    "priceAssigned": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

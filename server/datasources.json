@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoOutbox": {
+    "host": "ds027748.mlab.com",
+    "port": 27748,
+    "url": "mongodb://kaleman:Kestar1234@ds027748.mlab.com:27748/outbox",
+    "database": "outbox",
+    "password": "Kestar1234",
+    "name": "mongoOutbox",
+    "user": "kaleman",
+    "connector": "mongodb"
+  }
+}

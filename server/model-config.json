@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Users": {
+    "dataSource": "mongoOutbox",
+    "public": true
+  },
+  "Company": {
+    "dataSource": "mongoOutbox",
+    "public": true
+  },
+  "PointOfContact": {
+    "dataSource": "mongoOutbox",
+    "public": true
+  },
+  "Service": {
+    "dataSource": "mongoOutbox",
+    "public": true
+  },
+  "Recommendation": {
+    "dataSource": "mongoOutbox",
+    "public": true
+  },
+  "Entrust": {
+    "dataSource": "mongoOutbox",
+    "public": true
+  }
+}
