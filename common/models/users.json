@@ -12,6 +12,12 @@
       "type": "hasMany",
       "model": "Recommendation",
       "foreignKey": "userId"
+    },
+    "roles": {
+      "type": "hasMany",
+      "model": "Roles",
+      "foreignKey": "userId",
+      "through": "RoleUserMapping"
     }
   },
   "acls": [],

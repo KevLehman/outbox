@@ -58,5 +58,13 @@
   "Entrust": {
     "dataSource": "mongoOutbox",
     "public": true
+  },
+  "Roles": {
+    "dataSource": "mongoOutbox",
+    "public": true
+  },
+  "RoleUserMapping": {
+    "dataSource": "mongoOutbox",
+    "public": true
   }
 }

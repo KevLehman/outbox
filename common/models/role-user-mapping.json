@@ -1,0 +1,28 @@
+{
+  "name": "RoleUserMapping",
+  "plural": "RoleUserMappings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "roleId": "string",
+    "userId": "string"
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "Users",
+      "foreignKey": "userId"
+    },
+    "role": {
+      "type": "belongsTo",
+      "model": "Roles",
+      "foreignKey": "roleId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

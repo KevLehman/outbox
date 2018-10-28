@@ -1,0 +1,33 @@
+{
+  "name": "Roles",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "companyId": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "hasMany",
+      "model": "Users",
+      "foreignKey": "roleId",
+      "through": "RoleUserMapping"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
