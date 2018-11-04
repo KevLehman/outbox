@@ -8,6 +8,14 @@
   "properties": {},
   "validations": [],
   "relations": {
+    "accessTokens": {
+      "type": "hasMany",
+      "model": "AccessTokens",
+      "foreignKey": "userId",
+      "options": {
+        "disableInclude": true
+      }
+    },
     "recommendations": {
       "type": "hasMany",
       "model": "Recommendation",

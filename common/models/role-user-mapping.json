@@ -7,8 +7,12 @@
     "validateUpsert": true
   },
   "properties": {
-    "roleId": "string",
-    "userId": "string"
+    "roleId": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    }
   },
   "validations": [],
   "relations": {

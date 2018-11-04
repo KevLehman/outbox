@@ -1,6 +1,6 @@
 {
   "name": "Roles",
-  "base": "PersistedModel",
+  "base": "Role",
   "idInjection": true,
   "options": {
     "validateUpsert": true
